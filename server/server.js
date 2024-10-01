@@ -10,7 +10,11 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // For parsing application/x-www-form-urlencoded
 
-app.use(cors())
+app.use(cors({
+    origin: 'https://task-manager-gamma-nine.vercel.app', // Your Vercel frontend URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+}));
+
 
 
 app.get('/' , (req,res)=>{
