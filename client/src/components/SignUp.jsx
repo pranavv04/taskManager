@@ -26,7 +26,7 @@ const SignUp = () => {
       e.preventDefault();
   
       try {
-          const response = await fetch('https://taskmanager-backend-i458.onrender.com/user/signup', {
+          const response = await fetch('https://taskmanager-backend-bsps.onrender.com/user/signup', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json'
