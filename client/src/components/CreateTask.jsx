@@ -30,7 +30,7 @@ const CreateTask = () => {
     e.preventDefault();
   
     try {
-      const response = await fetch('http://localhost:4000/task/addpost', {
+      const response = await fetch('https://taskmanager-r9o7.onrender.com/task/addpost', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

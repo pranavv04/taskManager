@@ -9,7 +9,7 @@ const Tasks = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const response = await fetch('http://localhost:4000/task/');
+        const response = await fetch('https://taskmanager-r9o7.onrender.com/task/');
         if (response.ok) {
           const data = await response.json();
           setTasks(data);
