@@ -1,4 +1,4 @@
-![alltasks](https://github.com/user-attachments/assets/7b759fb1-1ea9-4b9a-b700-7772372f00fb)![home](https://github.com/user-attachments/assets/8abec16b-94b4-48c2-8696-1116ae7788d5)
+![home](https://github.com/user-attachments/assets/8abec16b-94b4-48c2-8696-1116ae7788d5)
 Home page of Task Manager where user can login and signup and also there are some cool animations
 ![alltasks](https://github.com/user-attachments/assets/eae45a10-070c-4388-852b-2b9bd35b21d4)
 All tasks page from backend all this tasks are geting fetched from MONGODB using node/express
