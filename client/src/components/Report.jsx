@@ -11,7 +11,7 @@ const Report = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`https://taskmanager-r9o7.onrender.com/task/report/${taskId}?format=${format}`, {
+            const response = await fetch(`http://localhost:4000/task/report/${taskId}?format=${format}`, {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}` // Include token if needed

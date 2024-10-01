@@ -26,7 +26,7 @@ const SignUp = () => {
       e.preventDefault();
   
       try {
-          const response = await fetch('https://taskmanager-r9o7.onrender.com/user/signup', {
+          const response = await fetch('http://localhost:4000/user/signup', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json'

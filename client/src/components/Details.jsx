@@ -14,7 +14,7 @@ const Details = () => {
     useEffect(() => {
         const fetchTask = async () => {
             try {
-                const response = await fetch(`https://taskmanager-r9o7.onrender.com/task/${id}`);
+                const response = await fetch(`http://localhost:4000/task/${id}`);
                 
                 if (!response.ok) {
                     const errorText = await response.text();
@@ -25,7 +25,7 @@ const Details = () => {
                 setTaskData(data); // Set task data
 
                 // Fetch the assigned user's username based on the "assigned" name in the task data
-                const assignedUserResponse = await fetch(`https://taskmanager-r9o7.onrender.com/user?name=${data.assigned}`);
+                const assignedUserResponse = await fetch(`http://localhost:4000/user?name=${data.assigned}`);
                 const assignedUserData = await assignedUserResponse.json();
                 
                 setAssignedUserUsername(assignedUserData.username); // Set the assigned user's username
@@ -43,7 +43,7 @@ const Details = () => {
     // Function to handle task deletion
     const handleDelete = async () => {
         try {
-            const response = await fetch(`https://taskmanager-r9o7.onrender.com/task/${id}`, {
+            const response = await fetch(`http://localhost:4000/task/${id}`, {
                 method: 'DELETE',
             });
             if (response.ok) {
