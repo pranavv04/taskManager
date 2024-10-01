@@ -19,7 +19,7 @@ const Update = () => {
         // Fetch the existing task details to populate the form
         const fetchTask = async () => {
             try {
-                const response = await fetch(`http://localhost:4000/task/${id}`, {
+                const response = await fetch(`https://taskmanager-backend-i458.onrender.com/task/${id}`, {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}` // Include token if needed
                     }
@@ -57,7 +57,7 @@ const handleSubmit = async (e) => {
     const { _id, __v, ...dataToUpdate } = taskData;
 
     try {
-        const response = await fetch(`http://localhost:4000/task/${id}`, {
+        const response = await fetch(`https://taskmanager-backend-i458.onrender.com/task/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
