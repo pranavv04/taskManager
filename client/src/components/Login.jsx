@@ -52,6 +52,7 @@ const Login = () => {
         <div>
             <form onSubmit={handleSubmit} className='bg-gray-100 h-[88.5vh] flex justify-center items-center text-center'>
                 <div className='flex flex-col justify-center items-center m-5 shadow-xl px-4 w-[600px] rounded-lg'>
+                <p className='text-red-500 text-sm font-bold'>Use "tester" as username and password</p>
                     <h2 className='text-xl text-black font-bold mb-5'>Welcome, Login to Task Manager.</h2>
 
                     <input
